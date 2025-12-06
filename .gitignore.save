@@ -1,0 +1,13 @@
+
+# ROS2 ve Python Özel Kuralları
+build/
+install/
+log/
+__pycache__/
+*.pyc
+
+# GitHub/Editor Kuralları
+.vscode/
+*.swp
+*~
+
