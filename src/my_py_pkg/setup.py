@@ -25,7 +25,8 @@ setup(
     entry_points={
         'console_scripts': [
             "py_node = my_py_pkg.my_first_node:main",
-            "py_node_2 = my_py_pkg.my_second_node:main"
+            "py_node_2 = my_py_pkg.my_second_node:main",
+            "state_publisher = my_py_pkg.robot_state_publisher:main"
         ],
     },
 )
