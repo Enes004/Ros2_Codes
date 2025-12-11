@@ -4,7 +4,7 @@ from example_interfaces.msg import String
 
 class RobotStatePublisher(Node):
     def __init__(self):
-        super().__init__b("Robot_State_Publisher")
+        super().__init__("Robot_State_Publisher")
         self.robot_name = "Rover-001"
         self.publisher = self.create_publisher(String,"state_publisher_topic",10) #Created publisher
         self.timer = self.create_timer(0.5,self.publish_state)
