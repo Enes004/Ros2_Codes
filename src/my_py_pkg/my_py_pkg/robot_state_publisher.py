@@ -6,10 +6,11 @@ class RobotStatePublisher(Node):
     def __init__(self):
         super().__init__("Robot_State_Publisher")
         self.robot_name = "Rover-001"
-        self.publisher = self.create_publisher(String,"state_publisher_topic",10) #Created publisher
+        self.publisher = self.create_publisher(String,"state_publisher_topic",10) #Created publisher (take string , name of topic , count)
         self.timer = self.create_timer(0.5,self.publish_state)
         self.get_logger().info("Robot state publisher has been started")
 
+#publisher method
     def publish_state(self):
         msg = String()
         msg.data = f"Hello , this is{self.robot_name} from Mars"
